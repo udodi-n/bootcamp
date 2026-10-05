@@ -1,16 +1,9 @@
-# React + Vite
+Hey JJ, use the choice-catalog.js for assigning weights based on categories.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+like maybe for question 1 choice 1, it shows wha tpercentage of a tactician, assault, intel, commander, or guardian they are. it'll make it easier for you to calculate the scores.
 
-Currently, two official plugins are available:
+And Cubic, you're in charge of giving the overall percentages. like 50% tactician, 23% intel, 10% commander, 5% assault,12%guardian.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+y'all should make a /backend folder so it doesn't clash with React.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Thanks :)
