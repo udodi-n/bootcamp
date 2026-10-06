@@ -7,3 +7,9 @@ And Cubic, you're in charge of giving the overall percentages. like 50% tacticia
 y'all should make a /backend folder so it doesn't clash with React.
 
 Thanks :)
+
+Update: 19:03 PM, 6th September
+
+Hey JJ and cubick, check out /backend/choice-weight.js to see what i mean with the object of weights.
+
+Thanks 
