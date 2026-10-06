@@ -1,5 +1,6 @@
 export const act1 = [
     {name: "The Start"},
+//     {background: "/backgrounds/command_room.jpeg"},
     {q01: {
             speaker: "Commander",
             expression: "neutral",

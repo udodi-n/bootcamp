@@ -1,7 +1,7 @@
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))
+import { choices } from './choice-catalog.js'
 
-export async function makechoice(choiceArray){
-    await delay(2000)
-    console.log(choiceArray[1])
-    await delay(1000)
+export async function grabChoice(choiceArray){
+    const obj = choices.filter(item => choiceArray.includes(item.id))
+    console.log(obj)
+    return obj
 }

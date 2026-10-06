@@ -1,0 +1,77 @@
+.notebook {
+  background: linear-gradient(to bottom,white 29px,#00b0d7 1px);
+  /* margin:50px auto; */
+  background-size: 100% 30px;
+  position:relative;
+  padding-left:50px;
+  padding-right:20px;
+  overflow:hidden;
+  border-radius:1px;
+  -webkit-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+  -moz-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+  -ms-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+  -o-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+  box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+  &:before {
+    content:'';
+    display:block;
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:40px;
+    height:100%;
+    width:1px;
+    background:#db4034;
+  }
+}
+
+.pixel-blast {
+  padding: 14px 24px;
+  border: none;
+  background: #315c2b;
+  color: #fce7f3;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  clip-path: polygon(0 4px, 4px 4px, 4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+  box-shadow: inset -4px -4px 0 rgba(0, 0, 0, 0.35), inset 4px 4px 0 rgba(255, 255, 255, 0.25);
+  transition: filter 0.1s ease;
+}
+
+.slide-in-left {
+    animation: slideLeft 2s ease-out
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        /* transform: scaleX(-1) */
+    }
+    to {
+        transform: translateX(0%);
+            /* transform: scaleX(-1) */
+
+    }
+}
+.slide-in-right {
+    animation: slideRight 2s ease-out
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        /* transform: scaleX(-1) */
+    }
+    to {
+        transform: translateX(0%);
+            /* transform: scaleX(-1) */
+
+    }
+}
+
+.slide-in-right {
+
+}
