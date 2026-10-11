@@ -96,7 +96,7 @@ async function useEngine(act){
         const key = Object.keys(act[i+2])
         const acc = act[i+2][key];
         setSpeaker({speaker: acc.speaker, text: acc.text})
-        const random = expressions[Math.round(Math.random() * 5)]
+        const random = expressions[Math.floor(Math.random() * expressions.length)]
         setExpression(random)
         await displayText()
         await makechoice(acc.choices)
@@ -110,7 +110,7 @@ async function openCloseEngine(act){
         const key = Object.keys(act[i+2])
         const acc = act[i+2][key];
         setSpeaker({speaker: acc.speaker, text: acc.text})
-        const random = expressions[Math.round(Math.random() * 6)]
+        const random = expressions[Math.floor(Math.random() * expressions.length)]
         setExpression(random)
         await displayText()
         
