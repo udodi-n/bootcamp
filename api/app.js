@@ -18,6 +18,10 @@ app.post('/api/score', async (req, res) => {
     res.send(result)
 })
 
+app.get('/api/ping', (req, res) => {
+    res.send("pong")
+})
+
 app.listen(PORT, (req, res) => {
     console.log(`server running on PORT ${PORT}`)
 })
