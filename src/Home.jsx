@@ -61,21 +61,27 @@ function makechoice(choiceArray){
     })
 }
 
-async function getResult(){
-  fetch(`${import.meta.env.VITE_FETCH_URL || "http://localhost:3000/"}api/score`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(answers.current)
-  })
-  .then(response => response.json())
-  .then((data) => {
-    
-    localStorage.setItem("score", JSON.stringify(data))
-  })
-  .catch(error => console.error(error))
-  navigate('/result')
+async function getResult() {
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_FETCH_URL || "http://localhost:3000/"}api/score`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(answers.current)
+      }
+    );
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status} ${await response.text()}`);
+    }
+    const data = await response.json();
+    localStorage.setItem("score", JSON.stringify(data));
+    navigate("/result");
+  } catch (error) {
+    console.error("Failed to get result:", error);
+  }
 }
 
 function chooseCadet(cadet){
