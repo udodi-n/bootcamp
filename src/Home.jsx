@@ -74,13 +74,13 @@ async function getResult() {
       }
     );
     if (!response.ok) {
-      throw new Error(`API error: ${response.status} ${await response.text()}`);
+      throw new Error(`${await response.text()}`);
     }
     const data = await response.json();
     localStorage.setItem("score", JSON.stringify(data));
     navigate("/result");
   } catch (error) {
-    console.error("Failed to get result:", error);
+    console.error(error);
   }
 }
 
